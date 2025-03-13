@@ -1,0 +1,471 @@
+$ gem install rails -v6.0.2.1
+Successfully installed rails-6.0.2.1
+Parsing documentation for rails-6.0.2.1
+Done installing documentation for rails after 0 seconds
+1 gem installed
+$ gem list rails
+
+*** LOCAL GEMS ***
+
+rails (7.1.3, 6.0.2.1)
+rails-dom-testing (2.2.0)
+rails-html-sanitizer (1.6.2)
+sprockets-rails (3.4.2)
+$ rails new maap3-blogapp --skip-bundle
+Traceback (most recent call last):
+        22: from /home/maap3/.rbenv/versions/2.7.7/bin/rails:23:in `<main>'
+        21: from /home/maap3/.rbenv/versions/2.7.7/bin/rails:23:in `load'
+        20: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/exe/rails:10:in `<top (required)>'
+        19: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        18: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        17: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/cli.rb:12:in `<top (required)>'
+        16: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        15: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        14: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/command.rb:3:in `<top (required)>'
+        13: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        12: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+        11: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support.rb:29:in `<top (required)>'
+        10: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         9: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         8: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support/logger.rb:3:in `<top (required)>'
+         7: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         6: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         5: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support/logger_silence.rb:5:in `<top (required)>'
+         4: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         3: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/2.7.0/rubygems/core_ext/kernel_require.rb:83:in `require'
+         2: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support/logger_thread_safe_level.rb:8:in `<top (required)>'
+         1: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support/logger_thread_safe_level.rb:9:in `<module:ActiveSupport>'
+/home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.2.1/lib/active_support/logger_thread_safe_level.rb:16:in `<module:LoggerThreadSafeLevel>': uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger (NameError)
+$ gem list concurrent-ruby
+
+*** LOCAL GEMS ***
+
+concurrent-ruby (1.3.5, 1.3.4)
+maap3@LAPTOP-J3HDT85H:~$ ruby -r concurrent -e "puts Concurrent::VERSION"
+1.3.5
+1.3.5
+1.3.5: command not found
+maap3@LAPTOP-J3HDT85H:~$ gem uninstall concurrent-ruby -v "1.3.5" -x
+Successfully uninstalled concurrent-ruby-1.3.5
+maap3@LAPTOP-J3HDT85H:~$ gem list concurrent-ruby
+
+*** LOCAL GEMS ***
+
+concurrent-ruby (1.3.4)
+maap3@LAPTOP-J3HDT85H:~$ gem install rails -v "6.0.2.1"
+Successfully installed rails-6.0.2.1
+Parsing documentation for rails-6.0.2.1
+Done installing documentation for rails after 0 seconds
+1 gem installed
+maap3@LAPTOP-J3HDT85H:~$ rails -v
+Rails 6.0.2.1
+maap3@LAPTOP-J3HDT85H:~$ rails new maap3-blogapp --skip-bundle
+      create
+      create  README.md
+      create  Rakefile
+      create  .ruby-version
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+         run  git init from "."
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/maap3/maap3-blogapp/.git/
+      create  package.json
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/javascript/channels/consumer.js
+      create  app/javascript/channels/index.js
+      create  app/javascript/packs/application.js
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/yarn
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/storage.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/content_security_policy.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults_6_0.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/master.key
+      append  .gitignore
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  tmp
+      create  tmp/.keep
+      create  tmp/pids
+      create  tmp/pids/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor
+      create  vendor/.keep
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/channels/application_cable/connection_test.rb
+      create  test/test_helper.rb
+      create  test/system
+      create  test/system/.keep
+      create  test/application_system_test_case.rb
+      create  storage
+      create  storage/.keep
+      create  tmp/storage
+      create  tmp/storage/.keep
+      remove  config/initializers/cors.rb
+      remove  config/initializers/new_framework_defaults_6_0.rb
+       rails  webpacker:install
+Could not find gem 'sqlite3 (~> 1.4)' in any of the gem sources listed in your Gemfile.
+Run `bundle install` to install missing gems.
+maap3@LAPTOP-J3HDT85H:~$ rm maap3-blogapp
+rm: cannot remove 'maap3-blogapp': Is a directory
+maap3@LAPTOP-J3HDT85H:~$ rails new maap30-blogapp
+      create
+      create  README.md
+      create  Rakefile
+      create  .ruby-version
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+         run  git init from "."
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/maap3/maap30-blogapp/.git/
+      create  package.json
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/javascript/channels/consumer.js
+      create  app/javascript/channels/index.js
+      create  app/javascript/packs/application.js
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/yarn
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/storage.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/content_security_policy.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults_6_0.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/master.key
+      append  .gitignore
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  tmp
+      create  tmp/.keep
+      create  tmp/pids
+      create  tmp/pids/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor
+      create  vendor/.keep
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/channels/application_cable/connection_test.rb
+      create  test/test_helper.rb
+      create  test/system
+      create  test/system/.keep
+      create  test/application_system_test_case.rb
+      create  storage
+      create  storage/.keep
+      create  tmp/storage
+      create  tmp/storage/.keep
+      remove  config/initializers/cors.rb
+      remove  config/initializers/new_framework_defaults_6_0.rb
+         run  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies.....
+ffi-1.17.1-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current
+version, 3.1.6
+         run  bundle binstubs bundler
+Could not find gem 'sqlite3 (~> 1.4)' in any of the gem sources listed in your Gemfile.
+         run  bundle exec spring binstub --all
+bundler: command not found: spring
+Install missing gem executables with `bundle install`
+       rails  webpacker:install
+Could not find gem 'sqlite3 (~> 1.4)' in any of the gem sources listed in your Gemfile.
+Run `bundle install` to install missing gems.
+maap3@LAPTOP-J3HDT85H:~$ rails new maap3-blogapppractice
+      create
+      create  README.md
+      create  Rakefile
+      create  .ruby-version
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+         run  git init from "."
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/maap3/maap3-blogapppractice/.git/
+      create  package.json
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/javascript/channels/consumer.js
+      create  app/javascript/channels/index.js
+      create  app/javascript/packs/application.js
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/yarn
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/storage.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/content_security_policy.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults_6_0.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/master.key
+      append  .gitignore
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  tmp
+      create  tmp/.keep
+      create  tmp/pids
+      create  tmp/pids/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor
+      create  vendor/.keep
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/channels/application_cable/connection_test.rb
+      create  test/test_helper.rb
+      create  test/system
+      create  test/system/.keep
+      create  test/application_system_test_case.rb
+      create  storage
+      create  storage/.keep
+      create  tmp/storage
+      create  tmp/storage/.keep
+      remove  config/initializers/cors.rb
+      remove  config/initializers/new_framework_defaults_6_0.rb
+         run  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies.....
+ffi-1.17.1-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current
+version, 3.1.6
+         run  bundle binstubs bundler
+Could not find gem 'sqlite3 (~> 1.4)' in any of the gem sources listed in your Gemfile.
+         run  bundle exec spring binstub --all
+bundler: command not found: spring
+Install missing gem executables with `bundle install`
+       rails  webpacker:install
+Could not find gem 'sqlite3 (~> 1.4)' in any of the gem sources listed in your Gemfile.
+Run `bundle install` to install missing gems.
