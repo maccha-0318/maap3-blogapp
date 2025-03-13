@@ -1,0 +1,387 @@
+```$ rails new restapi --api --skip-bundle
+      create
+      create  README.md
+      create  Rakefile
+      create  .ruby-version
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+         run  git init from "."
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/maap3/restapi/.git/
+      create  app
+      create  app/assets/config/manifest.js
+      create  app/assets/stylesheets/application.css
+      create  app/channels/application_cable/channel.rb
+      create  app/channels/application_cable/connection.rb
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/javascript/channels/consumer.js
+      create  app/javascript/channels/index.js
+      create  app/javascript/packs/application.js
+      create  app/jobs/application_job.rb
+      create  app/mailers/application_mailer.rb
+      create  app/models/application_record.rb
+      create  app/views/layouts/application.html.erb
+      create  app/views/layouts/mailer.html.erb
+      create  app/views/layouts/mailer.text.erb
+      create  app/assets/images/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/rails
+      create  bin/rake
+      create  bin/setup
+      create  bin/yarn
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/cable.yml
+      create  config/puma.rb
+      create  config/spring.rb
+      create  config/storage.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/application_controller_renderer.rb
+      create  config/initializers/assets.rb
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/content_security_policy.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/cors.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/new_framework_defaults_6_0.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/master.key
+      append  .gitignore
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/apple-touch-icon-precomposed.png
+      create  public/apple-touch-icon.png
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  tmp
+      create  tmp/.keep
+      create  tmp/pids
+      create  tmp/pids/.keep
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor
+      create  vendor/.keep
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/fixtures/files
+      create  test/fixtures/files/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/channels/application_cable/connection_test.rb
+      create  test/test_helper.rb
+      create  storage
+      create  storage/.keep
+      create  tmp/storage
+      create  tmp/storage/.keep
+      remove  app/assets
+      remove  lib/assets
+      remove  tmp/cache/assets
+      remove  app/helpers
+      remove  test/helpers
+      remove  app/views/layouts/application.html.erb
+      remove  public/404.html
+      remove  public/422.html
+      remove  public/500.html
+      remove  public/apple-touch-icon-precomposed.png
+      remove  public/apple-touch-icon.png
+      remove  public/favicon.ico
+      remove  app/javascript
+      remove  config/initializers/assets.rb
+      remove  config/initializers/cookies_serializer.rb
+      remove  config/initializers/content_security_policy.rb
+      remove  config/initializers/new_framework_defaults_6_0.rb
+      remove  bin/yarn
+maap3@LAPTOP-J3HDT85H:~$ cd restapi
+maap3@LAPTOP-J3HDT85H:~/restapi$ code .
+maap3@LAPTOP-J3HDT85H:~/restapi$ bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies....
+ffi-1.17.1-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the
+current version, 3.1.6
+maap3@LAPTOP-J3HDT85H:~/restapi$ bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies....
+Fetching rake 13.2.1
+Installing rake 13.2.1
+Fetching concurrent-ruby 1.3.5
+Installing concurrent-ruby 1.3.5
+Using i18n 1.14.7
+Fetching minitest 5.25.4
+Installing minitest 5.25.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.11
+Using zeitwerk 2.6.18
+Fetching activesupport 6.0.6.1
+Installing activesupport 6.0.6.1
+Using builder 3.3.0
+Using erubi 1.13.1
+Fetching mini_portile2 2.8.8
+Installing mini_portile2 2.8.8
+Fetching racc 1.8.1
+Installing racc 1.8.1 with native extensions
+Using nokogiri 1.15.7 (x86_64-linux)
+Using rails-dom-testing 2.2.0
+Using crass 1.0.6
+Using loofah 2.24.0
+Using rails-html-sanitizer 1.6.2
+Fetching actionview 6.0.6.1
+Installing actionview 6.0.6.1
+Fetching rack 2.2.13
+Installing rack 2.2.13
+Using rack-test 2.2.0
+Fetching actionpack 6.0.6.1
+Installing actionpack 6.0.6.1
+Using nio4r 2.7.4
+Using base64 0.2.0
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.7.7
+Fetching actioncable 6.0.6.1
+Installing actioncable 6.0.6.1
+Using globalid 1.1.0
+Fetching activejob 6.0.6.1
+Installing activejob 6.0.6.1
+Fetching activemodel 6.0.6.1
+Installing activemodel 6.0.6.1
+Fetching activerecord 6.0.6.1
+Installing activerecord 6.0.6.1
+Using marcel 1.0.4
+Fetching activestorage 6.0.6.1
+Installing activestorage 6.0.6.1
+Using mini_mime 1.1.5
+Fetching date 3.4.1
+Installing date 3.4.1 with native extensions
+Using timeout 0.4.3
+Using net-protocol 0.2.2
+Fetching net-imap 0.4.19
+Installing net-imap 0.4.19
+Fetching net-pop 0.1.2
+Installing net-pop 0.1.2
+Fetching net-smtp 0.5.1
+Installing net-smtp 0.5.1
+Using mail 2.8.1
+Fetching actionmailbox 6.0.6.1
+Installing actionmailbox 6.0.6.1
+Fetching actionmailer 6.0.6.1
+Installing actionmailer 6.0.6.1
+Fetching actiontext 6.0.6.1
+Installing actiontext 6.0.6.1
+Fetching msgpack 1.8.0
+Installing msgpack 1.8.0 with native extensions
+Fetching bootsnap 1.18.4
+Installing bootsnap 1.18.4 with native extensions
+Using bundler 2.1.4
+Fetching byebug 11.1.3
+Installing byebug 11.1.3 with native extensions
+Fetching ffi 1.15.5
+Installing ffi 1.15.5 with native extensions
+Fetching rb-fsevent 0.11.2
+Installing rb-fsevent 0.11.2
+Fetching rb-inotify 0.11.1
+Installing rb-inotify 0.11.1
+Fetching ruby_dep 1.5.0
+Installing ruby_dep 1.5.0
+Fetching listen 3.1.5
+Installing listen 3.1.5
+Using method_source 1.1.0
+Fetching puma 4.3.12
+Installing puma 4.3.12 with native extensions
+Using thor 1.3.2
+Fetching railties 6.0.6.1
+Installing railties 6.0.6.1
+Using sprockets 4.2.1
+Using sprockets-rails 3.4.2
+Fetching rails 6.0.6.1
+Installing rails 6.0.6.1
+Fetching spring 2.1.1
+Installing spring 2.1.1
+Fetching spring-watcher-listen 2.0.1
+Installing spring-watcher-listen 2.0.1
+Fetching sqlite3 1.6.9 (x86_64-linux)
+Installing sqlite3 1.6.9 (x86_64-linux)
+Bundle complete! 10 Gemfile dependencies, 62 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+maap3@LAPTOP-J3HDT85H:~/restapi$ rails s
+Traceback (most recent call last):
+        20: from bin/rails:4:in `<main>'
+        19: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        18: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        17: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/commands.rb:3:in `<main>'
+        16: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        15: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        14: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/command.rb:3:in `<main>'
+        13: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        12: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        11: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support.rb:29:in `<main>'
+        10: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         9: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         8: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger.rb:3:in `<main>'
+         7: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         6: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         5: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_silence.rb:5:in `<main>'
+         4: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         3: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         2: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:8:in `<main>'
+         1: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:9:in `<module:ActiveSupport>'
+/home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:16:in `<module:LoggerThreadSafeLevel>': uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger (NameError)
+maap3@LAPTOP-J3HDT85H:~/restapi$ bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+You have requested:
+  concurrent-ruby = 1.3.4
+
+The bundle currently has concurrent-ruby locked at 1.3.5.
+Try running `bundle update concurrent-ruby`
+
+If you are updating multiple gems in your Gemfile at once,
+try passing them all to `bundle update`
+maap3@LAPTOP-J3HDT85H:~/restapi$  rails s
+You have requested:
+  concurrent-ruby = 1.3.4
+
+The bundle currently has concurrent-ruby locked at 1.3.5.
+Try running `bundle update concurrent-ruby`
+
+If you are updating multiple gems in your Gemfile at once,
+try passing them all to `bundle update`
+Run `bundle install` to install missing gems.
+maap3@LAPTOP-J3HDT85H:~/restapi$  bundle install
+The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+Fetching gem metadata from https://rubygems.org/...........
+Fetching gem metadata from https://rubygems.org/.
+Resolving dependencies...
+Using rake 13.2.1
+Using concurrent-ruby 1.3.5
+Using i18n 1.14.7
+Using minitest 5.25.4
+Using thread_safe 0.3.6
+Using tzinfo 1.2.11
+Using zeitwerk 2.6.18
+Using activesupport 6.0.6.1
+Using builder 3.3.0
+Using erubi 1.13.1
+Using mini_portile2 2.8.8
+Using racc 1.8.1
+Using nokogiri 1.15.7 (x86_64-linux)
+Using rails-dom-testing 2.2.0
+Using crass 1.0.6
+Using loofah 2.24.0
+Using rails-html-sanitizer 1.6.2
+Using actionview 6.0.6.1
+Using rack 2.2.13
+Using rack-test 2.2.0
+Using actionpack 6.0.6.1
+Using nio4r 2.7.4
+Using base64 0.2.0
+Using websocket-extensions 0.1.5
+Using websocket-driver 0.7.7
+Using actioncable 6.0.6.1
+Using globalid 1.1.0
+Using activejob 6.0.6.1
+Using activemodel 6.0.6.1
+Using activerecord 6.0.6.1
+Using marcel 1.0.4
+Using activestorage 6.0.6.1
+Using mini_mime 1.1.5
+Using date 3.4.1
+Using timeout 0.4.3
+Using net-protocol 0.2.2
+Using net-imap 0.4.19
+Using net-pop 0.1.2
+Using net-smtp 0.5.1
+Using mail 2.8.1
+Using actionmailbox 6.0.6.1
+Using actionmailer 6.0.6.1
+Using actiontext 6.0.6.1
+Using msgpack 1.8.0
+Using bootsnap 1.18.4
+Using bundler 2.1.4
+Using byebug 11.1.3
+Using ffi 1.15.5
+Using rb-fsevent 0.11.2
+Using rb-inotify 0.11.1
+Using ruby_dep 1.5.0
+Using listen 3.1.5
+Using method_source 1.1.0
+Using puma 4.3.12
+Using thor 1.3.2
+Using railties 6.0.6.1
+Using sprockets 4.2.1
+Using sprockets-rails 3.4.2
+Using rails 6.0.6.1
+Using spring 2.1.1
+Using spring-watcher-listen 2.0.1
+Using sqlite3 1.6.9 (x86_64-linux)
+Bundle complete! 11 Gemfile dependencies, 62 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+maap3@LAPTOP-J3HDT85H:~/restapi$ rails s
+Traceback (most recent call last):
+        20: from bin/rails:4:in `<main>'
+        19: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        18: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        17: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/commands.rb:3:in `<main>'
+        16: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        15: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        14: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/railties-6.0.6.1/lib/rails/command.rb:3:in `<main>'
+        13: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        12: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+        11: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support.rb:29:in `<main>'
+        10: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         9: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         8: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger.rb:3:in `<main>'
+         7: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         6: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         5: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_silence.rb:5:in `<main>'
+         4: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         3: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/bootsnap-1.18.4/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30:in `require'
+         2: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:8:in `<main>'
+         1: from /home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:9:in `<module:ActiveSupport>'
+/home/maap3/.rbenv/versions/2.7.7/lib/ruby/gems/2.7.0/gems/activesupport-6.0.6.1/lib/active_support/logger_thread_safe_level.rb:16:in `<module:LoggerThreadSafeLevel>': uninitialized constant ActiveSupport::LoggerThreadSafeLevel::Logger (NameError)```
